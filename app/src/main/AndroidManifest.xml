@@ -16,6 +16,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".MyOrdersActivity"
+            android:label="@string/title_activity_my_orders"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".AddProductActivity"
             android:label="@string/title_activity_add_product"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -44,7 +48,6 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".mlkit.EntryChoiceActivity"
             android:exported="true" />
