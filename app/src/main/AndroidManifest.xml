@@ -16,9 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".MyOrderSummeryActivity"
+            android:label="@string/title_activity_my_order_summery"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".MyOrdersActivity"
             android:label="@string/title_activity_my_orders"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AddProductActivity"
             android:label="@string/title_activity_add_product"

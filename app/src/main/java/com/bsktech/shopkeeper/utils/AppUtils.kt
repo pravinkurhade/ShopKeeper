@@ -12,6 +12,8 @@ import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.IOException
 import java.io.InputStream
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 object AppUtils {
@@ -24,6 +26,14 @@ object AppUtils {
         output = output.trim()
         return output
     }
+
+    fun convertLongToTime(time: Long): String {
+        val date = Date(time)
+        val format = SimpleDateFormat("yyyy.MM.dd hh:mm aa")
+        return format.format(date)
+    }
+
+
 
     fun flipping(b: Bitmap): Bitmap {
         val bos = ByteArrayOutputStream()

@@ -90,4 +90,5 @@
     <string name="pref_title_delay_loading_barcode_result">Delay loading barcode result</string>
     <string name="pref_summary_delay_loading_barcode_result">Will show the loading spinner for 2s</string>
     <string name="title_activity_my_orders">My Orders</string>
+    <string name="title_activity_my_order_summery">My Order Summery</string>
 </resources>

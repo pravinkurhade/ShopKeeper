@@ -82,5 +82,8 @@ class MainActivity : AppCompatActivity(), (MainMenu) -> Unit {
         if (mainMenu.title.equals("Products")){
             startActivity(Intent(this, MyProductsActivity::class.java))
         }
+        if (mainMenu.title.equals("Orders")){
+            startActivity(Intent(this, MyOrdersActivity::class.java))
+        }
     }
 }

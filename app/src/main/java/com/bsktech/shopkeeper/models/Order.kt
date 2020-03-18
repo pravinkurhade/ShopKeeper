@@ -1,9 +1,7 @@
 package com.bsktech.shopkeeper.models
 
 import android.os.Parcelable
-import com.bsktech.shopkeeper.models.StoreItem
 import kotlinx.android.parcel.Parcelize
-import java.util.*
 import kotlin.collections.ArrayList
 
 /** Information about a barcode field.  */
@@ -13,9 +11,9 @@ data class Order(
     var uid: String? = null,
     var storeId: String? = null,
     var uidStoreId: String? = null,
-    var orderItems: ArrayList<StoreItem>,
+    var orderItems: ArrayList<StoreItem>? = null,
     var total: Double? = null,
-    var paymentMode: String = "Cash",
+    var paymentMode: String? = "Cash",
     var paymentRefNo: String? = null,
     var transactionObject: String? = null,
     var timestamp: Long? = null
