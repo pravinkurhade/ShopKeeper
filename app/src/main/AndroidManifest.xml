@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bsktech.shopkeeper">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MyOrdersActivity"
+            android:label="@string/title_activity_my_orders"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".AddProductActivity"
+            android:label="@string/title_activity_add_product"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyProductsActivity"
+            android:label="@string/title_activity_my_products"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:label="@string/title_activity_my_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mlkit.EntryChoiceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mlkit.MainMLActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".mlkit.LiveObjectDetectionActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".mlkit.LiveBarcodeScanningActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".mlkit.StaticObjectDetectionActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".mlkit.settings.SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_title"
+            android:theme="@style/Theme.AppCompat.Light" />
+    </application>
+
+</manifest>
