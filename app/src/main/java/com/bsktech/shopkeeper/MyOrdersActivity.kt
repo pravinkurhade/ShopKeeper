@@ -1,5 +1,6 @@
 package com.bsktech.shopkeeper
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
@@ -103,5 +104,9 @@ class MyOrdersActivity : AppCompatActivity(), (Customer, Order) -> Unit {
 
     override fun invoke(customer: Customer, order: Order) {
         Log.d(TAG, order._id)
+        val intent = Intent(this, MyOrderSummeryActivity::class.java);
+        intent.putExtra("customer", customer)
+        intent.putExtra("order", order)
+        startActivity(intent)
     }
 }

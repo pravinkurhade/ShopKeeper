@@ -13,5 +13,8 @@ data class StoreItem(
     var price: Double? = null,
     var image: ArrayList<String>? = null,
     var productCodeStoreId: String? = null,
-    var timestamp: Long? = null
+    var timestamp: Long? = null,
+    var uid: String? = null,
+    var cartItemId: String? = null,
+    var quantity: Int? = null
 ) : Parcelable
